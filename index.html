@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iman Can Talk - AI Chatbot</title>
-  <meta name="description" content="Iman Can Talk - an AI chatbot that answers your questions using Groq and Ollama open-source models." />
+  <title>Iman's Apps Hub</title>
+  <meta name="description" content="Iman's Apps Hub - a 3D calculator, Sea Tic-Tac-Toe, and the Iman Can Talk AI chatbot." />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -17,47 +17,66 @@
       padding: 24px;
     }
     .card {
-      max-width: 720px;
+      max-width: 760px;
       text-align: center;
       background: #ffffff;
       border-radius: 20px;
-      padding: 48px 40px;
+      padding: 44px 36px;
       box-shadow: 0 20px 60px rgba(80, 40, 140, 0.18);
     }
-    .emoji { font-size: 56px; }
-    h1 { font-size: 32px; margin: 16px 0 8px; color: #222; }
-    p { color: #555; font-size: 17px; line-height: 1.6; margin-bottom: 28px; }
-    .btn {
-      display: inline-block;
-      background: #7c3aed;
-      color: #fff;
-      font-size: 18px;
-      font-weight: 600;
-      text-decoration: none;
-      padding: 14px 34px;
-      border-radius: 12px;
-      transition: background 0.2s ease, transform 0.15s ease;
+    .emoji { font-size: 52px; }
+    h1 { font-size: 30px; margin: 12px 0 6px; color: #222; }
+    p { color: #555; font-size: 16px; line-height: 1.6; margin-bottom: 26px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 16px;
+      margin-top: 6px;
     }
-    .btn:hover { background: #6d28d9; transform: translateY(-2px); }
-    .links { margin-top: 26px; font-size: 14px; }
-    .links a { color: #7c3aed; text-decoration: none; }
-    .links a:hover { text-decoration: underline; }
+    .tile {
+      display: block;
+      text-decoration: none;
+      background: #f5f0ff;
+      border: 1px solid #e4dcf7;
+      border-radius: 16px;
+      padding: 22px 14px;
+      transition: transform 0.15s ease, box-shadow 0.2s ease;
+    }
+    .tile:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(80,40,140,.18); }
+    .tile .icon { font-size: 38px; }
+    .tile .name { font-size: 18px; font-weight: 700; color: #333; margin-top: 10px; }
+    .tile .desc { font-size: 13px; color: #777; margin-top: 4px; line-height: 1.4; }
+    .tile.calc { background: #f0f7ff; border-color: #d0e4ff; }
+    .tile.tictactoe { background: #f0fff5; border-color: #c9f0d8; }
+    .tile.chat { background: #f5f0ff; border-color: #e4dcf7; }
+    .footer { margin-top: 26px; font-size: 13px; color: #888; }
+    .footer a { color: #7c3aed; text-decoration: none; }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="emoji">💬</div>
-    <h1>Iman Can Talk</h1>
-    <p>
-      An AI chatbot that answers your questions using open-source models,
-      powered by Groq in the cloud and Ollama locally. Ask anything &
-mdash; and get detailed, friendly answers.
-    </p>
-    <a class="btn" href="https://iman-can-talk-ks68zuug3ehqtc95bq9f7k.streamlit.app/" target="_blank" rel="noopener">
-      Launch Chatbot
-    </a>
-    <div class="links">
-      <a href="https://github.com/iman-coll/Iman-can-talk" target="_blank" rel="noopener">View source on GitHub</a>
+    <div class="emoji">🚀</div>
+    <h1>Iman's Apps Hub</h1>
+    <p>Three small projects, all built by Iman. Pick one and jump in.</p>
+    <div class="grid">
+      <a class="tile calc" href="https://github.com/iman-coll/3d-calculator" target="_blank" rel="noopener">
+        <div class="icon">🧮</div>
+        <div class="name">3D Calculator</div>
+        <div class="desc">Realistic 3D keys — add, subtract, multiply, divide</div>
+      </a>
+      <a class="tile tictactoe" href="https://github.com/iman-coll/sea-tic-tac-toe" target="_blank" rel="noopener">
+        <div class="icon">🌊</div>
+        <div class="name">Sea Tic-Tac-Toe</div>
+        <div class="desc">3D board, win detection and scoreboard</div>
+      </a>
+      <a class="tile chat" href="https://iman-can-talk-ks68zuug3ehqtc95bq9f7k.streamlit.app/" target="_blank" rel="noopener">
+        <div class="icon">💬</div>
+        <div class="name">Iman Can Talk AI</div>
+        <div class="desc">Chatbot powered by Groq cloud models</div>
+      </a>
+    </div>
+    <div class="footer">
+      Made by <a href="https://github.com/iman-coll" target="_blank" rel="noopener">Iman</a> · <a href="https://iman-coll.github.io/iman-can-talk-landing/" target="_blank" rel="noopener">Apps Hub</a>
     </div>
   </div>
 </body>
